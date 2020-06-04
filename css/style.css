@@ -138,10 +138,22 @@ li {
   align-items: center;
   justify-content: center;
   height: 86vh;
+  background-image: url("../img/header/bg.JPG");
+  background-size: cover;
+}
+
+#header .bg-mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
 }
 
 #header .logo {
   position: relative;
+  align-items: center;
   margin-bottom: 30px;
   text-align: center;
 }
