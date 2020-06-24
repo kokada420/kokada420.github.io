@@ -89,7 +89,8 @@ li {
  全体
 ---------------------------------*/
 #wrapper {
-  padding-top: 68px;
+  /* padding-top: 15px; */
+  padding-bottom: 100px;
 }
 
 .section {
@@ -131,71 +132,48 @@ li {
 }
 
 /*--------------------------------
-ヘッダー
+ ヘッダー　グローバルナビ
 ---------------------------------*/
-#header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 86vh;
-  background-image: url("../img/header/bg.JPG");
-  background-size: cover;
-}
-
-#header .bg-mask {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background: rgba(255,255,255,0.7);
-}
-
-#header .logo {
-  position: relative;
-  align-items: center;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-#header .logo-title {
-  font-family: "Open sans", sans-serif;
-  font-size: 64px;
-  line-height: 1;
-  letter-spacing: .2em;
-}
-
-#header .logo-desc {
-  font-size: 20px;
-  margin-top: 5px;
-  text-align: center;
-  letter-spacing: .2em;
-}
-
-/*--------------------------------
- グローバルナビ
----------------------------------*/
-
-#gnav {
+/* 
+#header .gnav {
   background-color: #fff;
   -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+} */
+header{
+  background-color: #fff;
+  height: 70px;
+  margin: 0 auto;
 }
 
-#gnav {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
+header #index_logo{
+  float: left;
 }
 
+header #gnav {
+  float: right;
+  /* z-index: 100; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+}
+
+header img{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 5px 0;
+}
+header img:hover {
+  opacity: 0.8;
+  transition-duration: 0.2s;
+}
 
 #gnav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #gnav li {
@@ -236,6 +214,14 @@ li {
 
 #gnav li a:hover::after {
   width: 100%;
+}
+
+#index {
+  background-image: url(../img/header/bg.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /*--------------------------------
@@ -579,6 +565,12 @@ li {
 /*--------------------------------
  Footer
 ---------------------------------*/
+#index footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0; /*下に固定*/
+}
+
 #footer {
   background-color: #1d1d1d;
 }
@@ -588,7 +580,7 @@ li {
 }
 
 #footer .copyright {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   color: #8c8c8c;
 }
