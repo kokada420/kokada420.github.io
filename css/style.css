@@ -144,6 +144,7 @@ li {
 header{
   background-color: #fff;
   height: 70px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -173,7 +174,7 @@ header img:hover {
 #gnav ul {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: left;
 }
 
 #gnav li {
@@ -216,12 +217,38 @@ header img:hover {
   width: 100%;
 }
 
+/*--------------------------------
+ index
+---------------------------------*/
 #index {
   background-image: url(../img/header/bg.JPG);
+  background-color:rgba(255,255,255,0.6);
+  background-blend-mode:lighten;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  position: center fixed;
+}
+
+.index {
+  color: 117 109 117;
+}
+
+.index_main #phraze{
+  padding: 4vh 0 0 5vh;
+  font-size: 100px;
+  line-height: 1.2;
+  font-family: ta-rb, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.index_main #script{
+  padding: 8vh 0 0 5.2vh;
+  font-size: 20px;
+  font-family: kan412typos-std, sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 /*--------------------------------
@@ -576,7 +603,7 @@ header img:hover {
 }
 
 #footer .inner {
-  padding: 30px;
+  padding: 15px;
 }
 
 #footer .copyright {
